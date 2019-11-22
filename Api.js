@@ -2,8 +2,7 @@ import { checkNetworkConnection } from "../webService/NetworkCheck";
 
 export default function graphQLRequest(variables, apiName, apiMethod, token) {
      const baseUrl = "http://192.168.0.1:3000/";
-    // const baseUrl = "http://Ac4-le902-793026-1A6M2-65.vp-1.compute.amazonaws.com:3000/"
-    // const baseUrl = "http:/12312222222.20:300/"    // New staging url
+   
     //console.log("URL : " + baseUrl + apiName);
 
     return checkNetworkConnection().then((networkStatus) => {
@@ -95,39 +94,6 @@ export default function graphQLRequest(variables, apiName, apiMethod, token) {
 };
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// export default function graphQLRequest(variables, method, apiMethod, token) {
-//     const siteUrl = "http://172.16.6.11:8090/";
-//     // const siteUrl = "http://ec2-52-76-162-65.ap-southeast-1.compute.amazonaws.com:8090/"
-//     var init = apiMethod == "GET" ? {
-//         method: "GET",
-//         headers: {
-//             "Content-Type": "application/json",
-//             'Authorization': token ? "JWT " + token : ""
-//         },
-//     } :
-//         {
-//             method: apiMethod,
-//             headers: {
-//                 'Content-Type': "application/json",
-//                 'Authorization': token ? "JWT " + token : "",
-//             },
-//             body: JSON.stringify(variables)
-//         }
 
 //     //console.log("URL ==> " + siteUrl + method + JSON.stringify(variables))
 
