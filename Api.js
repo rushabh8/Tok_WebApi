@@ -95,23 +95,4 @@ export default function graphQLRequest(variables, apiName, apiMethod, token) {
 
 
 
-//     //console.log("URL ==> " + siteUrl + method + JSON.stringify(variables))
 
-//     return fetch(siteUrl + method, init)
-//         .then(res => res.json().then(data => {
-//             //console.log("API Data ==>" + JSON.stringify(data));
-//             // if (res.status == 200 || res.status == 201) {
-//             var apiData = { 
-//                 status: res.status,
-//                 data: data
-//             }
-//             return apiData;
-
-//         }))
-//         .catch(err => {
-//             //console.log("err" + JSON.stringify(err))
-//             //alert("server not responding. Please try again.");
-//             return error = { "data": { "responseCode": 1000 } }
-
-//         });
-// };
